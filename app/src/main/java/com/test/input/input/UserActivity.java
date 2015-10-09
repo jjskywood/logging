@@ -41,6 +41,9 @@ public class UserActivity extends Activity {
         }
 
     }
+    public void back(View view) {
+        UserActivity.this.finish();
+    }
 
     }
 

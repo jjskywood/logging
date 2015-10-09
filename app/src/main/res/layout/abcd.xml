@@ -28,5 +28,13 @@
             android:id="@+id/textView3"
             android:gravity="center"
             android:layout_weight="0.50" />
-    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/button3"
+        android:onClick="back"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
 

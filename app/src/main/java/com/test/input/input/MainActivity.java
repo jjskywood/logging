@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        Log.d("Debug", "onCreate");
+//        Log.d("Debug", "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -45,11 +45,12 @@ public class MainActivity extends Activity {
                     //创建Intent对象，参数分别为上下文，要跳转的Activity类
                     if( "".equals(edit1.getText().toString()))
                     {
-                        Toast.makeText(MainActivity.this, "用户名不能为空", Toast.LENGTH_LONG).show();//显示消息提示
+//                        Toast.makeText(MainActivity.this, "用户名不能为空", Toast.LENGTH_LONG).show();//显示消息提示
+                        new AlertDialog.Builder(MainActivity.this).setTitle("错误").setMessage("用户名不能为空，请完善").setPositiveButton("确定", null).show();
                     }
                     else {
-                        Intent intent = new Intent(MainActivity.this, UserActivity.class);
 
+                        Intent intent = new Intent(MainActivity.this, UserActivity.class);
                         Bundle bundle = new Bundle();
                         bundle.putCharSequence("user", user);
                         bundle.putCharSequence("password", password);
@@ -67,39 +68,40 @@ public class MainActivity extends Activity {
 
     public void onClickshow(View view){
 //        Log.d("Debug","onClickshow");
-        TextView user=(TextView)findViewById(R.id.editText);
-        TextView pass=(TextView)findViewById(R.id.editText2);
-        user.setText("");
-        pass.setText("");
+//        TextView user=(TextView)findViewById(R.id.editText);
+//        TextView pass=(TextView)findViewById(R.id.editText2);
+//        user.setText("");
+//        pass.setText("");
+         MainActivity.this.finish();
 
     }
 
 
-    public void onStart(){
-        super.onStart();
-        Log.d("Debug","onStart");
-   }
-    public void onRestart(){
-      super.onRestart();
-        Log.d("Debug", "onRestart");
-    }
-    public void onResume(){
-     super.onResume();
-        Log.d("Debug", "onResume");
-    }
-    public void onPause(){
-    super.onPause();
-        Log.d("Debug", "onPause");
-
-    }
-    public void onStop(){
-        super.onStop();
-        Log.d("Debug", "onStop");
-    }
-    public void onDestroy(){
-        super.onDestroy();
-        Log.d("Debug", "onDestroy");
-    }
+//    public void onStart(){
+//        super.onStart();
+//        Log.d("Debug","onStart");
+//   }
+//    public void onRestart(){
+//      super.onRestart();
+//        Log.d("Debug", "onRestart");
+//    }
+//    public void onResume(){
+//     super.onResume();
+//        Log.d("Debug", "onResume");
+//    }
+//    public void onPause(){
+//    super.onPause();
+//        Log.d("Debug", "onPause");
+//
+//    }
+//    public void onStop(){
+//        super.onStop();
+//        Log.d("Debug", "onStop");
+//    }
+//    public void onDestroy(){
+//        super.onDestroy();
+//        Log.d("Debug", "onDestroy");
+//    }
 
 
 
