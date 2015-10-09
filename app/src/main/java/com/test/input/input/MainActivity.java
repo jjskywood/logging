@@ -74,31 +74,31 @@ public class MainActivity extends Activity {
 
     }
 
-//    public void onStart(){
-//        super.onStart();
-//        Log.d("Debug","onStart");
-//   }
-//    public void onRestart(){
-//      super.onRestart();
-//        Log.d("Debug", "onRestart");
-//    }
-//    public void onResume(){
-//     super.onResume();
-//        Log.d("Debug", "onResume");
-//    }
-//    public void onPause(){
-//    super.onPause();
-//        Log.d("Debug", "onPause");
-//
-//    }
-//    public void onStop(){
-//        super.onStop();
-//        Log.d("Debug", "onStop");
-//    }
-//    public void onDestroy(){
-//        super.onDestroy();
-//        Log.d("Debug", "onDestroy");
-//    }
+    public void onStart(){
+        super.onStart();
+        Log.d("Debug","onStart");
+   }
+    public void onRestart(){
+      super.onRestart();
+        Log.d("Debug", "onRestart");
+    }
+    public void onResume(){
+     super.onResume();
+        Log.d("Debug", "onResume");
+    }
+    public void onPause(){
+    super.onPause();
+        Log.d("Debug", "onPause");
+
+    }
+    public void onStop(){
+        super.onStop();
+        Log.d("Debug", "onStop");
+    }
+    public void onDestroy(){
+        super.onDestroy();
+        Log.d("Debug", "onDestroy");
+    }
 
 
 
